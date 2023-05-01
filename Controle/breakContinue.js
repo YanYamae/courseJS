@@ -9,12 +9,13 @@ for (let x in nums) {
 
 for (let y in nums) {
     if (y == 5) {
-        continue // interompe a execução quando tem a condição do if e continua executando a próxima
+        continue // interrompe a execução quando tem a condição do if e continua executando a próxima
     }
     console.log(`${y} = ${nums[y]}`)
 }
 
-externo: for (a in nums) { // rotulação, não recomendado porem mt interessante
+externo: // rotulação, não recomendado porem mt interessante
+for (a in nums) { 
     for (b in nums) {
         if (a == 2 && b == 3) break externo // permite aplicar o break em um laço específico
         console.log(`Par = ${a}, ${b}`)
